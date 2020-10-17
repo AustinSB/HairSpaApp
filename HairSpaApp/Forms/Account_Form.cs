@@ -89,6 +89,7 @@ namespace HairSpaApp.Forms
 
                 username_TextBox.Text = AccountIndex.Username;
                 password_TextBox.Text = AccountIndex.Password;
+                isAdmin_CheckBox.Checked = AccountIndex.IsAdmin;
             }
         }
 
@@ -96,7 +97,7 @@ namespace HairSpaApp.Forms
         {
             ac.Username = username_TextBox.Text;
             ac.Password = password_TextBox.Text;
-            //ac.IsActive = false;
+            ac.IsAdmin = isAdmin_CheckBox.Checked;
         }
 
         private bool ValidateAccount()

@@ -25,6 +25,7 @@ namespace HairSpaApp.Forms
         private void Main_Form_Load(object sender, EventArgs e)
         {
             SetDataGrids();
+            IsUserAdmin();
         }
 
         //Controls
@@ -318,6 +319,23 @@ namespace HairSpaApp.Forms
         private void reportForm_Closed(object sender, EventArgs e) => RefreshMain();
 
         //Methods
+        private void IsUserAdmin()
+        {
+            if (ActiveUser.ActiveAcct.IsAdmin == false)
+            {
+                foreach (Control control  in this.Controls)
+                {
+                    if (control.Name.Contains("accounts"))
+                    {
+                        control.Visible = false;
+                    }
+                }
+                customersDelete_Button.Enabled = false;
+                employeesDelete_Button.Enabled = false;
+                appointmentsDelete_Button.Enabled = false;
+            }
+        }
+
         private void RefreshMain()
         {
             SetDataGrids();

@@ -38,6 +38,7 @@
             this.showPass_Button = new System.Windows.Forms.Button();
             this.pass2_TextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.isAdmin_CheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // account_Label
@@ -52,7 +53,7 @@
             // 
             // acctCancel_Button
             // 
-            this.acctCancel_Button.Location = new System.Drawing.Point(12, 217);
+            this.acctCancel_Button.Location = new System.Drawing.Point(12, 267);
             this.acctCancel_Button.Name = "acctCancel_Button";
             this.acctCancel_Button.Size = new System.Drawing.Size(75, 30);
             this.acctCancel_Button.TabIndex = 1;
@@ -62,7 +63,7 @@
             // 
             // acctSave_Button
             // 
-            this.acctSave_Button.Location = new System.Drawing.Point(235, 217);
+            this.acctSave_Button.Location = new System.Drawing.Point(235, 267);
             this.acctSave_Button.Name = "acctSave_Button";
             this.acctSave_Button.Size = new System.Drawing.Size(75, 30);
             this.acctSave_Button.TabIndex = 2;
@@ -130,11 +131,22 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Re-Enter\r\nPassword";
             // 
+            // isAdmin_CheckBox
+            // 
+            this.isAdmin_CheckBox.AutoSize = true;
+            this.isAdmin_CheckBox.Location = new System.Drawing.Point(24, 212);
+            this.isAdmin_CheckBox.Name = "isAdmin_CheckBox";
+            this.isAdmin_CheckBox.Size = new System.Drawing.Size(136, 23);
+            this.isAdmin_CheckBox.TabIndex = 11;
+            this.isAdmin_CheckBox.Text = "Give admin rights";
+            this.isAdmin_CheckBox.UseVisualStyleBackColor = true;
+            // 
             // Account_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 259);
+            this.ClientSize = new System.Drawing.Size(322, 309);
+            this.Controls.Add(this.isAdmin_CheckBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pass2_TextBox);
             this.Controls.Add(this.showPass_Button);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.Button showPass_Button;
         private System.Windows.Forms.TextBox pass2_TextBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox isAdmin_CheckBox;
     }
 }

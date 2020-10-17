@@ -58,6 +58,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\202010071518439_InitialCreate.cs" />
+    <Compile Include="Migrations\202010071518439_InitialCreate.designer.cs">
+      <DependentUpon>202010071518439_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010071522296_AccountAdminCoulmn.cs" />
+    <Compile Include="Migrations\202010071522296_AccountAdminCoulmn.designer.cs">
+      <DependentUpon>202010071522296_AccountAdminCoulmn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -132,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports_Form.resx">
       <DependentUpon>Reports_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010071518439_InitialCreate.resx">
+      <DependentUpon>202010071518439_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010071522296_AccountAdminCoulmn.resx">
+      <DependentUpon>202010071522296_AccountAdminCoulmn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
